@@ -1,0 +1,28 @@
+{
+    "name": "bot_ksi508a",
+    "version": "0.0.5",
+    "description": "None",
+    "main": "index.js",
+    "scripts": {
+        "start": "link-module-alias && node src/index.js",
+        "dev": "link-module-alias && nodemon src/index.js",
+        "postinstall": "link-module-alias"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KuryKat/Bot_KSI508A.git"
+    },
+    "author": "KuryKat",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/KuryKat/Bot_KSI508A/issues"
+    },
+    "homepage": "https://github.com/KuryKat/Bot_KSI508A#readme",
+    "dependencies": {
+        "discord.js": "^12.3.1",
+        "link-module-alias": "^1.2.0",
+        "module-alias": "^2.2.2",
+        "dotenv": "^8.2.0"
+    },
+    "_moduleAliases": {}
+}
