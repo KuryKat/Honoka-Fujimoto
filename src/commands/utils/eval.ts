@@ -5,7 +5,8 @@ import { inspect } from 'util'
 
 @Command('eval')
 @HelpInfo({
-  visible: false
+  visible: false,
+  description: 'Command just for my father'
 })
 class Eval extends BaseCommand {
   async execute (): Promise<void> {

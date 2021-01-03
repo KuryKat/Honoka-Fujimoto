@@ -2,11 +2,13 @@ import { BaseCommand, Command, HelpInfo } from '@modules/handler'
 
 @Command('test')
 @HelpInfo({
-  visible: false
+  visible: false,
+  description: 'Base Command'
 })
 class Test extends BaseCommand {
   async execute (): Promise<void> {
-    console.log('Hello World')
+    this.msg.channel.send('Hello World')
+      .catch(console.error)
   }
 }
 
