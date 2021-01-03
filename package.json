@@ -2,7 +2,7 @@
     "name": "bot_ksi508a",
     "version": "0.0.5",
     "description": "None",
-    "main": "index.js",
+    "main": "src/index.js",
     "scripts": {
         "start": "link-module-alias && node src/index.js",
         "dev": "link-module-alias && nodemon src/index.js",
