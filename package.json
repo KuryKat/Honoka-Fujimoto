@@ -1,8 +1,10 @@
 {
     "name": "bot_ksi508a",
     "version": "0.0.5",
+    "author": "KuryKat",
     "description": "None",
     "main": "src/index.js",
+    "license": "GPL-3.0",
     "scripts": {
         "start": "link-module-alias && node src/index.js",
         "dev": "link-module-alias && nodemon src/index.js",
@@ -12,8 +14,6 @@
         "type": "git",
         "url": "git+https://github.com/KuryKat/Bot_KSI508A.git"
     },
-    "author": "KuryKat",
-    "license": "MIT",
     "bugs": {
         "url": "https://github.com/KuryKat/Bot_KSI508A/issues"
     },
