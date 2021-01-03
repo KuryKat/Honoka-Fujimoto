@@ -1,28 +1,48 @@
 {
-    "name": "bot_ksi508a",
-    "version": "0.0.5",
+    "name": "honoka-fujimoto",
+    "description": "Simple bot for Discord",
+    "version": "0.0.1",
     "author": "KuryKat",
-    "description": "None",
-    "main": "src/index.js",
     "license": "GPL-3.0",
+    "main": "src/index.ts",
     "scripts": {
-        "start": "link-module-alias && node src/index.js",
-        "dev": "link-module-alias && nodemon src/index.js",
-        "postinstall": "link-module-alias"
+        "start": "ts-node -r tsconfig-paths/register .",
+        "dev": "ts-node-dev -r tsconfig-paths/register .",
+        "build": "tsc -p .",
+        "lint": "eslint --ext .ts --ignore-path .gitignore .",
+        "lintfix": "eslint --ext .ts --ignore-path .gitignore --fix ."
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/KuryKat/Bot_KSI508A.git"
+        "url": "git+https://github.com/KuryKat/Honoka-Fujimoto.git"
     },
     "bugs": {
-        "url": "https://github.com/KuryKat/Bot_KSI508A/issues"
+        "url": "https://github.com/KuryKat/Honoka-Fujimoto/issues"
     },
-    "homepage": "https://github.com/KuryKat/Bot_KSI508A#readme",
+    "homepage": "https://github.com/KuryKat/Honoka-Fujimoto#readme",
     "dependencies": {
         "discord.js": "^12.3.1",
-        "link-module-alias": "^1.2.0",
-        "module-alias": "^2.2.2",
-        "dotenv": "^8.2.0"
+        "dotenv": "^8.2.0",
+        "glob": "^7.1.6",
+        "moment": "^2.27.0",
+        "reflect-metadata": "^0.1.13",
+        "tsconfig-paths": "^3.9.0"
     },
-    "_moduleAliases": {}
+    "devDependencies": {
+        "@types/glob": "^7.1.3",
+        "@types/node": "^14.14.14",
+        "@typescript-eslint/eslint-plugin": "^4.10.0",
+        "@typescript-eslint/parser": "^4.10.0",
+        "eslint": "7.15.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-config-standard-with-typescript": "^19.0.1",
+        "eslint-import-resolver-typescript": "^2.3.0",
+        "eslint-plugin-import": "2.22.1",
+        "eslint-plugin-node": "11.1.0",
+        "eslint-plugin-promise": "4.2.1",
+        "eslint-plugin-standard": "^5.0.0",
+        "ts-node": "^9.1.1",
+        "ts-node-dev": "^1.1.1",
+        "typescript": "^4.1.3"
+    }
 }
