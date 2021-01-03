@@ -46,7 +46,7 @@ class Eval extends BaseCommand {
         await msg.react(emoji)
       }
 
-      const filter = (reaction: MessageReaction, user: User): boolean => reaction.me && user.id === this.msg.author.id
+      const filter = (reaction: MessageReaction, user: User): boolean => !reaction.me && user.id === this.msg.author.id
 
       const options = { time: 60000, max: 2 }
 
