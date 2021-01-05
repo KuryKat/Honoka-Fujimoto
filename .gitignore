@@ -109,3 +109,6 @@ package-lock.json
 # Useless files to be on Github
 profile_picture.png
 profile_picture.psd 
+honoka-alpha.png
+honoka-alpha.psd
+src/commands/updateEmotes.ts
