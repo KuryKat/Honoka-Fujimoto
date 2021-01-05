@@ -1,18 +1,18 @@
 import honoka from '@bot'
-
 import { MessageEmbed, GuildMember, TextChannel } from 'discord.js'
 import moment from 'moment'
+import { createUser } from '@utils/database'
 
 honoka.client.on('guildMemberAdd', member => {
   if (member.guild.id === process.env.MAINGUILD) {
     autoRole(member)
     memberLog(member)
   }
+  createUser(member)
 })
 
 function autoRole (member: GuildMember): void {
   member.roles.add(process.env.MEMBERROLE as string)
-    .catch(console.error)
 }
 
 function memberLog (member: GuildMember): void {
@@ -45,5 +45,4 @@ function memberLog (member: GuildMember): void {
     ])
     .setFooter(member.id)
   )
-    .catch(console.error)
 }

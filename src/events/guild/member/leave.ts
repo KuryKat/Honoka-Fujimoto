@@ -1,11 +1,13 @@
 import honoka from '@bot'
 import { GuildMember, MessageEmbed, TextChannel } from 'discord.js'
+import { updateUserGuilds } from '@utils/database'
 
 honoka.client.on('guildMemberRemove', member => {
+  const completeMember = member as GuildMember
   if (member.guild.id === process.env.MAINGUILD) {
-    const completeMember = member as GuildMember
     memberLog(completeMember)
   }
+  updateUserGuilds(completeMember, true)
 })
 
 function memberLog (member: GuildMember): void {
@@ -30,5 +32,4 @@ function memberLog (member: GuildMember): void {
         inline: true
       }
     ]))
-    .catch(console.error)
 }
