@@ -2,8 +2,9 @@ import { BaseCommand, Command, HelpInfo } from '@modules/handler'
 
 @Command('daily')
 @HelpInfo({
-  visible: false,
-  description: 'Base Command'
+  module: 'Economy',
+  description: 'Not Implemented',
+  usage: ['']
 })
 class Daily extends BaseCommand {
   async execute (): Promise<void> {
