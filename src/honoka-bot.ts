@@ -21,7 +21,6 @@ class HonokaBot {
   start (): void {
     this._handler.build()
     this._client.login(process.env.TOKEN)
-      .catch(console.error)
   }
 }
 

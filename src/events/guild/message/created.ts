@@ -1,5 +1,4 @@
 import honoka from '@bot'
-
 import { Message, MessageEmbed } from 'discord.js'
 
 honoka.client.on('message', msg => {
@@ -17,6 +16,5 @@ function selfMention (msg: Message): void {
     msg.channel.send(new MessageEmbed()
       .setColor(process.env.PRIMARYCOLOR as string)
       .setTitle(`${msg.author.username}, meu prefixo é \`${prefix}\`, para ver meus comandos basta usar o comando \`${prefix}help\`!`))
-      .catch(console.error)
   }
 }

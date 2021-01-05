@@ -8,5 +8,4 @@ honoka.client.on('ready', () => {
 
 function setStatus (): void {
   honoka.client.user?.setActivity('you 😋', { type: 'WATCHING' })
-    .catch(console.error)
 }

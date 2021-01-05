@@ -15,7 +15,6 @@ class Help extends BaseCommand {
       this.showAllCommands()
     } else {
       this.showCommandInfo()
-        ?.catch(console.error)
     }
   }
 
@@ -123,7 +122,6 @@ class Help extends BaseCommand {
 
     embed.addFields(embedFields)
     this.msg.channel.send(embed)
-      .catch(console.error)
   }
 }
 
