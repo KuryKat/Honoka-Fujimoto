@@ -21,7 +21,7 @@
     },
     "homepage": "https://github.com/KuryKat/Honoka-Fujimoto#readme",
     "dependencies": {
-        "discord.js": "^12.3.1",
+        "discord.js": "^12.5.3",
         "dotenv": "^8.2.0",
         "glob": "^7.1.6",
         "moment": "^2.27.0",
