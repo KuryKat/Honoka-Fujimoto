@@ -1,16 +1,14 @@
 {
     "name": "honoka-fujimoto",
     "description": "Simple bot for Discord",
-    "version": "0.0.1",
+    "version": "0.0.5",
     "author": "KuryKat",
     "license": "GPL-3.0",
     "main": "src/index.ts",
     "scripts": {
         "start": "ts-node -r tsconfig-paths/register .",
         "dev": "ts-node-dev -r tsconfig-paths/register .",
-        "build": "tsc -p .",
-        "lint": "eslint --ext .ts --ignore-path .gitignore .",
-        "lintfix": "eslint --ext .ts --ignore-path .gitignore --fix ."
+        "lint": "eslint --ext .ts --ignore-path .gitignore ."
     },
     "repository": {
         "type": "git",
