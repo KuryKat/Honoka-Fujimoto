@@ -23,7 +23,7 @@
         "dotenv": "^10.0.0",
         "glob": "^7.1.7",
         "moment": "^2.27.0",
-        "mongoose": "^5.12.14",
+        "mongoose": "^5.13.2",
         "reflect-metadata": "^0.1.13",
         "tsconfig-paths": "^3.9.0"
     },
