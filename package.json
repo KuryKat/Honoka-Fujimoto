@@ -31,7 +31,7 @@
         "@types/glob": "^7.1.3",
         "@typescript-eslint/parser": "^4.27.0",
         "@types/node": "^15.12.2",
-        "@typescript-eslint/eslint-plugin": "^4.27.0",
+        "@typescript-eslint/eslint-plugin": "^4.28.3",
         "eslint": "7.28.0",
         "eslint-config-standard": "^16.0.3",
         "eslint-config-standard-with-typescript": "^20.0.0",
